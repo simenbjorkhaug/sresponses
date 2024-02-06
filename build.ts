@@ -7,10 +7,13 @@ await build({
   outDir: './npm',
   shims: {
     // see JS docs for overview and more options
-    deno: true,
+    deno: true
   },
   test: false,
   typeCheck: false,
+  compilerOptions: {
+    lib: ["ESNext", "DOM"]
+  },
   package: {
     // package.json properties
     name: '@bjorkhaug/sresponses',
