@@ -13,9 +13,10 @@ await build({
   typeCheck: false,
   package: {
     // package.json properties
-    name: '@bjorkhaug/sfile-router',
+    name: '@bjorkhaug/sresponses',
     version: Deno.args[0],
-    description: 'Small file router for using files as routes in deno.',
+    description:
+      'Simple response functions for Deno to help with consistent response creation.',
     license: 'MIT',
     publishConfig: {
       access: 'public',
@@ -24,10 +25,10 @@ await build({
     },
     repository: {
       type: 'git',
-      url: 'git+https://github.com/simenbjorkhaug/sfile-router.git',
+      url: 'git+https://github.com/simenbjorkhaug/sresponses.git',
     },
     bugs: {
-      url: 'https://github.com/simenbjorkhaug/sfile-router/issues',
+      url: 'https://github.com/simenbjorkhaug/sresponses/issues',
     },
   },
   postBuild() {
